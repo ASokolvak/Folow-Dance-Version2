@@ -5,7 +5,7 @@ html{
   box-sizing: inherit;
 }
 body{
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(85, 85, 85);
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -36,6 +36,8 @@ body{
   z-index: 50;
   
 }
+
+
 .header__wrapper::before{
   content: "";
   position: absolute;
@@ -46,8 +48,6 @@ body{
   background-color: rgb(34, 34, 34, 0.8);
 }
 .header__top{
-  padding-top: 20px;
-  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,7 @@ body{
   transition: all .3s;
 }
 .header__item-link:hover{
-  color:rgb(15, 230, 130); 
+  color:#da0191; 
 }
 .header__item-link{
   color: #fff;
@@ -126,7 +126,7 @@ path:hover{
 }
 .button{
   padding: 15px 30px;
-  background-color: #ec0059;
+  background-color: #da0191; 
   color: #fff;
   border-radius: 5px;
   font-weight: 300;
@@ -177,7 +177,7 @@ ul.about__list-items{
   right: 0;
   left: -60px;
   bottom: 0;
-  color:#ec0059;
+  color:#da0191; 
   font-size: 225px;
 }
 .about__img{
@@ -194,7 +194,7 @@ ul.about__list-items{
 }
 .about1__inner{
   display: flex;
-  margin-bottom: 100px;
+  
 }
 .about1__content{
   margin-left: 60px;
@@ -229,7 +229,8 @@ font-size: 23px;
   content: ".";
   top: -70px;;
   left: -60px;
-  color:#ec0059;
+ 
+  color:#da0191; 
   font-size: 225px;
 
 }
@@ -237,8 +238,12 @@ font-size: 23px;
   height: 700px;
   width: 800px;
 }
+.reviews{
+  background-color: rgb(226, 226, 226);
+  color: #000;
+}
 .reviews__inner{
-  margin-bottom: 100px;
+  
   
 }
 .reviews__item{
@@ -275,7 +280,10 @@ font-size: 23px;
 
 
 
-
+.program{
+  background-color: #fff;
+  color: #000;
+}
 .program__title{
   font-size: 42px;
   line-height: 50px;
@@ -283,9 +291,12 @@ font-size: 23px;
   text-align: center;
   margin-bottom: 40px;
 }
-.program__inner{
-  margin-bottom: 100px;
+.program__btn{
+  padding: 6px 30px;
+
 }
+
+
 ul.program__list{
   margin-bottom: 50px;
   max-width: 900px;
@@ -303,13 +314,23 @@ ul.program__list{
   content: ".";
   top: -70px;
   left: -60px;
-  color: #fff;
+  color:#da0191; 
   font-size: 225px;
+}
+.video{
+  background-color: rgb(226, 226, 226);
+  color: #000;
+  padding-top: 100px;
 }
 .video__link{
   margin: 0 auto;
   display: block;
-  margin-bottom: 100px;
+  
+}
+.tarif{
+ background-color: #fff;
+ color: #000;
+
 }
 .tarif__title{
   font-size: 42px;
@@ -320,7 +341,7 @@ ul.program__list{
 }
 .tarif__inner{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 100px;
 }
 .tarif__wraper{
@@ -351,7 +372,7 @@ ul.tarif__list{
   font-size: 24px;
   height: 50px;
   width: 100%;
-  background-color: #ec0059;
+  color:#da0191; 
   border-radius: 5px;
   position: relative;
 }
@@ -455,8 +476,8 @@ ul.tarif__list{
 
 
 .footer{
-  height: 350px;
-  background-color: rgb(22, 20, 20);
+  height: 250px;
+  background-color: rgb(48, 48, 48)
 }
 .footer__title{
   font-size: 30px;
@@ -489,7 +510,7 @@ ul.tarif__list{
 } 
 .confidencial{
   display: block;
-  padding-top: 100px;
+  padding-top: 0px;
   text-align: center;
 }
 .confidencial__link{
@@ -498,11 +519,16 @@ ul.tarif__list{
 }
 .timer,.timer1{
   height: 250px;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(85, 85, 85);
 }
 .timer1{
-  padding-top: 100px;
-  height: 330px;
+  padding-top: 16px;
+  height: 250px;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 16px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .taimer__content{
   font-size: 30px;
@@ -510,10 +536,10 @@ ul.tarif__list{
   padding-top: 40px;
   text-align: center;
 }
-.timer__inner,.timer__inner1{
+.timer__inner{
   font-size: 30px;
   font-weight: 300;
-  padding-top: 40px;
+  padding-top: 50px;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -561,7 +587,7 @@ hr{
   font-size: 20px;
   color: #fff;
   position: absolute;
-  top: 158px;
+  top: 152px;
   right: 498px;
   font-weight: 500;
   
@@ -571,7 +597,7 @@ hr{
   font-size: 20px;
   color: #fff;
   position: absolute;
-  top: 158px;
+  top: 152px;
   right: 414px;
   font-weight: 500;
 }
@@ -722,7 +748,7 @@ hr{
     height: 482px;
   }
   .video__link{
-    margin-bottom: 28px;
+   
   }
   .before-sale{
     max-width: 914px;
