@@ -480,17 +480,10 @@ ul.tarif__list{
 }
 
 .footer{
-  height: 250px;
+  height: 270px;
   background-color: rgb(48, 48, 48)
 }
-.footer__title{
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 100px;
-  text-align: center;
-  font-weight: 300;
-  padding-top: 20px;
-}
+
 .footer__contact{
  max-width: 200px;
  
@@ -508,13 +501,14 @@ ul.tarif__list{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 75px;
 }
 .social__list-link +.social__list-link {
   margin-left: 25px;
 } 
 .confidencial{
   display: block;
-  padding-top: 0px;
+  padding-top: 40px;
   text-align: center;
 }
 .confidencial__link{
@@ -887,7 +881,7 @@ hr{
     margin: 0 auto;
   }
   .reviews{
-    margin-top: 530px;
+    margin-top: 742px;
   }
   .reviews__item-img{
     height: 400px;
@@ -895,7 +889,7 @@ hr{
     margin: 0 auto;
   }
   .program__title{
-    padding-top: 0;
+    padding-top: 20px;
     font-size: 40px;
   }
   .video__link{
@@ -912,6 +906,9 @@ hr{
     padding-top: 70px;
 
   }
+  .timer1{
+    min-height: 285px;
+  }
 }
 @media (max-width:824px){
   .timer__inner, .timer__inner1{
@@ -926,8 +923,11 @@ hr{
   .timer__num{
     font-size: 28px;
   }
-  .timer, .timer1{
-    height: 232px;
+  .timer{
+    height: 242px;
+  }
+  .timer1{
+    height: 285px;
   }
   .about__title{
     padding: 15px;
@@ -951,6 +951,8 @@ hr{
   .timer__item{
     margin-right: 24px;
   }
+  
+  
 }
 @media (max-width:700px){
   .video__link{
@@ -970,6 +972,9 @@ hr{
     padding-top: 11px;
     width: 78%;
   }
+  .phone, .email{
+    font-size: 16px;
+  }
 }
 @media (max-width:625px){
   .about__title{
@@ -986,6 +991,18 @@ hr{
   .header__content{
     padding-top: 180px;
   }
+  .footer__inner{
+    display:flex;
+    flex-direction: column-reverse;
+
+  }
+  .footer__contact{
+    text-align: center;
+    padding-top: 35px;
+  }
+  .social__list{
+    text-align: center;
+  }
 }
 @media (max-width:568px){
   .header__text-btn{
@@ -993,7 +1010,7 @@ hr{
 
   }
   .container{
-  padding: 0 25px;
+  padding: 0 10px;
   }
   .timer__inner, .timer__inner1{
     font-size: 21px;
@@ -1002,7 +1019,7 @@ hr{
     margin-left: 35px;
   }
   .about__title{
-    padding: 0;
+    padding-top: 15px;
   }
   .about1__img{
     height: 396px;
