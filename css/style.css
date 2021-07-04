@@ -5,7 +5,7 @@ html{
   box-sizing: inherit;
 }
 body{
-  background-color: rgb(85, 85, 85);
+  background-color: #fff;
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -229,7 +229,6 @@ font-size: 23px;
   content: ".";
   top: -70px;;
   left: -60px;
- 
   color:#da0191; 
   font-size: 225px;
 
@@ -282,6 +281,7 @@ font-size: 23px;
 
 .program{
   background-color: #fff;
+  margin-bottom: 15px;
   color: #000;
 }
 .program__title{
@@ -320,7 +320,8 @@ ul.program__list{
 .video{
   background-color: rgb(226, 226, 226);
   color: #000;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .video__link{
   margin: 0 auto;
@@ -328,7 +329,7 @@ ul.program__list{
   
 }
 .tarif{
- background-color: #fff;
+  background-color: #fff;
  color: #000;
 
 }
@@ -346,7 +347,8 @@ ul.program__list{
 }
 .tarif__wraper{
   max-width: 350px;
-  border: 1px solid #fff;
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(85, 85, 85);
   padding: 15px 35px;    
 }
 .tarif__name{
@@ -372,7 +374,7 @@ ul.tarif__list{
   font-size: 24px;
   height: 50px;
   width: 100%;
-  color:#da0191; 
+  background-color:#da0191; 
   border-radius: 5px;
   position: relative;
 }
@@ -383,7 +385,7 @@ ul.tarif__list{
   left: 90px;
   text-decoration: line-through;
   font-size: 24px;
-  color: #fff;
+  color: rgb(85, 85, 85);;
 
 }
 .tarif__price a{
@@ -473,7 +475,9 @@ ul.tarif__list{
 
 
 
-
+.form{
+  background-color: rgb(85, 85, 85);
+}
 
 .footer{
   height: 250px;
@@ -546,7 +550,17 @@ ul.tarif__list{
 hr{
   margin-bottom: 40px;
 }
-
+.timer__list{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-top: 20px;
+  font-size: 19px;
+  padding-left: 20px;
+}
+.timer__item{
+  margin-right: 35px;
+}
 .timer__num{
   padding-top: 50px;
   font-size: 45px;
@@ -554,53 +568,17 @@ hr{
   letter-spacing: 3px;
   color:#fff;
   font-weight: 500;
-  position: relative;
+  
 }
-.timer__num::after{
-  content: "Days";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  top: 110px;
-  left: 5px;
-  letter-spacing: 1px;
 
-}
-.timer__num::before{
-  content: "Hours";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  left: 104px;
-  top: 111px;
-  letter-spacing: 1px;
-}
 
 
 .timer__title {
   font-weight: 700;
-  margin-bottom: 55px;
-  position: relative;
-}
-.timer__title::before{
-  content: "Min";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  top: 152px;
-  right: 498px;
-  font-weight: 500;
+  margin-bottom: 57px;
   
 }
-.timer__title::after{
-  content: "Sec";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  top: 152px;
-  right: 414px;
-  font-weight: 500;
-}
+
 .before-sale{
   
   
@@ -689,33 +667,7 @@ hr{
   .tarif__price{
     padding: 17px 17px;
   }
-  .timer__title::after{
-  content: "Sec";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  top: 158px;
-  right:353px;
-  font-weight: 500;
-}
-.timer__title::before{
-  content: "Min";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  top: 158px;
-  font-weight: 500;
-  right: 449px;
-}
-.timer__num::before{
-  content: "Hours";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  left: 99px;
-  top: 111px;
-  letter-spacing: 1px;
-}
+  
 }
 @media (max-width:1200px){
   .container{
@@ -758,6 +710,10 @@ hr{
   .before-sale__title{
     line-height: 28px;
   }
+  .timer__num{
+    font-size: 40px;
+  }
+  
 }
 @media (max-width:1150px){
   .about__img{
@@ -859,6 +815,7 @@ hr{
     transform: translateY(-1000%);
     transition: all .5s;
     overflow: auto;
+    margin-top: 106px;
 
     }
     .header__menu.active{
@@ -915,9 +872,7 @@ hr{
   .before-sale__item-price{
     margin-bottom: 20px;
   }
-  .timer1{
-    min-height: 500px;
-  }
+  
   .timer1__title{
     margin-top: 120px;
   }
@@ -992,6 +947,9 @@ hr{
   }
   .about1__name{
     padding-top: 15px;
+  }
+  .timer__item{
+    margin-right: 24px;
   }
 }
 @media (max-width:700px){
