@@ -18,7 +18,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/sweetalert.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -324,12 +323,13 @@
         <div class="popup__body">
           <div class="popup__content">
             <a href="#header" class="popup__close">X</a>
-            <div class="popup__title">Чтобы получить чек-лист оставте свои данные</div>
-            <form  class="popup__form">
-              <input type="text" name="user_name" placeholder="Введите Ваше Имя" >
-              <input type="text" name="user_phone" placeholder="Введите Ваш телефон">
-              <input type="text" name="user_email" placeholder="Введите Ваш email">
-              <button type="submit">ОТПРАВИТЬ</button>
+            <!-- <div class="popup__title">Чтобы получить чек-лист оставте свои данные</div> -->
+            <form action="telegram.php" method="POST" class="popup__form">
+              <legend>Чтобы получить чек-лист оставте свои данные</legend>
+              <input type="text" class="form-control" id="" name="name" placeholder="Введите Ваше Имя" >
+              <input type="text"class="form-control" id="" name="phone" placeholder="Введите Ваш телефон">
+              <input type="text"class="form-control" id="" name="email" placeholder="Введите Ваш email">
+              <button type="submit" class="form-btn">ОТПРАВИТЬ</button>
             </form>
           </div>
         </div>
@@ -439,8 +439,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/sweetalert.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
