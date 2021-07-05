@@ -621,6 +621,58 @@ ul.tarif__list{
   margin-bottom: 12px;
   margin-top: 10px;
 }
+.form{
+  
+}
+.form input
+{
+  border: none;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #373A39;;
+  padding: 16px ;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+legend{
+  font-size: 21px;
+  margin-bottom: 20px;
+
+}
+.form input::placeholder{
+  font-size: 12px;
+  line-height: 20px;
+  color: #B8B8B8;
+  font-weight: 300;
+   
+}
+
+.form textarea{
+ min-height: 140px;
+ resize: none;
+}
+
+.form button{
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  padding: 17px 70px 15px;
+  border: none;
+  background-color: #da0191;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-right: 40px;
+
+}
+.download{
+  color: #da0191;
+
+}
 .footer__inner{
   display: flex;
   justify-content: space-between;
@@ -704,58 +756,6 @@ hr{
   
 }
 
-.before-sale{
-  
-  
-
-}
-.before-sale__inner{
-  
-  margin: 0 auto;
-  height: 190px;
-  padding: 15px;
-  max-width: 1200px;
-  border-radius: 5px;
-  
-}
-.before-sale__title{
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  text-align: center;
-}
-.before-sale__text{
-  font-weight: 300;
-  font-size: 21px;
-  text-align: center;
-  margin-bottom: 40px;
-
-}
-.before-sale__items{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 40px;
-  margin-bottom: 40px;
-  
-}
-
-.before-sale__item-title{
-  font-size: 35px;
-  margin-bottom: 30px;
-}
-.before-sale__item-price{
-  font-weight: 700;
-  font-size: 40px;
-  color:rgb(15, 230, 130);
-}
-.before-sale__item-price span{
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-  color: rgb(15, 230, 130);;
-  
-}
 
 
 
@@ -873,6 +873,12 @@ hr{
     width: 60%;
     margin: 80px auto 0;                           
   }
+  .footer__contact {
+    margin-right: 430px;
+}
+.social__list{
+  margin: 0 auto;
+}
 }
 
 @media (max-width:1024px){  
@@ -1001,7 +1007,9 @@ hr{
       margin-bottom: 14px;
     }
     .about1__name{
-      margin-bottom: 6px;
+      
+      right: 81px;
+      bottom: 594px;
     }
     .about1__prof{
       margin-bottom: 6px;
@@ -1038,16 +1046,23 @@ hr{
     margin-top: 20px;
     margin-left: 25px;
   }
-}
-@media (max-width:900px){
   .about1__inner{
     display: block;
+  
   }
-  .about1__inner{
-    height: 540px;
-    width: 460px;
+  .about1__img{
     margin: 0 auto;
   }
+}
+@media (max-width:986px){
+  .about1__name{
+    bottom: 610px;
+  }
+}
+@media (max-width:900px){
+  
+  
+  
   .reviews{
     margin-top: 330px;
   }
@@ -1076,6 +1091,10 @@ hr{
   }
   .timer1{
     min-height: 285px;
+  }
+  .footer__img{
+    display: block;
+    margin: 0 auto;
   }
 }
 @media (max-width:824px){
@@ -1113,14 +1132,20 @@ hr{
     max-width: 594px;
     height: 300px;
   }
-  .about1__name{
-    padding-top: 15px;
-  }
+  
   .timer__item{
     margin-right: 24px;
   }
   .header__text{
     margin-bottom: 35px;
+  }
+  .about1__name{
+    bottom: 631px;
+    padding-top: 70px;
+    right: -4px;
+  }
+  .about1__img{
+    height: 493px;
   }
   
   
@@ -1169,14 +1194,11 @@ hr{
   .header__content{
     padding-top: 180px;
   }
-  .footer__inner{
-    display:flex;
-    flex-direction: column-reverse;
-
-  }
+  
   .footer__contact{
     text-align: center;
     padding-top: 35px;
+    margin: 0 auto;
   }
   .social__list{
     text-align: center;
@@ -1184,8 +1206,17 @@ hr{
   .footer__contact{
     margin-left: 100px;
   }
-
+  .about1__img{
+    height: 420px;
+  }
+  .footer__img {
+    margin: 0 auto;
+  }
+  .footer__contact {
+    width: 190px;
+  }
 }
+
 @media (max-width:568px){
   .header__text-btn{
     font-size: 20px;
@@ -1210,6 +1241,7 @@ hr{
     height: 329px;
     width: 340px;
     margin: 0 auto;
+   
   }
   .program__item{
     font-size: 19px;
@@ -1233,6 +1265,15 @@ hr{
   .program__img{
     height: 432px;
     width: 349px;
+  }
+  .about1__name{
+    bottom: 588px;
+    padding-top: 35px;
+    right: -4px;
+    padding-left: 21px;
+    font-size: 21px;
+    height: 100px;
+    width: 100px;
   }
 
 }
@@ -1307,9 +1348,13 @@ hr{
   .about1__content{
     margin-top: 17px;
   }
+  .about1__name{
+    bottom: 648px;
+    right: -10px;
+  }
   
   .header__quote{
-    bottom: 0;
+    bottom: 0px;
     left: -6px;
     font-size: 11px;
     line-height: 12px;
