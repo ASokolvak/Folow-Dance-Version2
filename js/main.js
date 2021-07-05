@@ -25,7 +25,7 @@ $(function () {
     
     $('body').toggleClass('lock');
   });
-  $(".menu a, .logo, .header__btn").on("click", function (e) {
+  $(".menu a, .logo, .header__btn, .program__btn").on("click", function (e) {
 
     e.preventDefault();
     var id = $(this).attr('href'),

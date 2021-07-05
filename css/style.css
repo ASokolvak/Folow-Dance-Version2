@@ -94,35 +94,51 @@ path{
   transition: all .3s;
 }
 path:hover{
-  fill: rgb(15, 230, 130); 
+  fill: #da0191;; 
 
 }
 
 .header__content{
   max-width: 620px;
-  padding-top: 300px;
+  padding-top: 290px;
   
 }
 .header__title{
   padding-bottom: 40px;
   font-size: 60px;
   line-height: 65px;
+  position: relative;
 }
+
 .header__text{
   font-weight: 300;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 18px;
 }
 .header__box{
   display: flex;
   align-items: center;
+}
+.header__quote{
+  font-size: 20px;
+  height: 175px;
+  width: 175px;
+  line-height: 21px;
+  padding: 34px;
+  background-color: #da0191;
+  color: #fff;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  margin: auto 0 400px auto ;
 }
 .header__text-btn{
   font-weight: 400;
   font-size: 25px;
   line-height: 30px;
   margin-right: 40px;
+  
 }
 .button{
   padding: 15px 30px;
@@ -246,7 +262,7 @@ font-size: 23px;
   
 }
 .reviews__item{
-  height: 600px;
+  height: 470px;
   width: 200px;
 }
 
@@ -259,8 +275,9 @@ font-size: 23px;
   display: inline;
 }
 .reviews__item-img{
-  height: 600px;
-  max-width: 400px;
+  height: 420px;
+    max-width: 360px;
+
 }
 .reviews__title{
   font-size: 42px;
@@ -343,7 +360,7 @@ ul.program__list{
 .tarif__inner{
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .tarif__wraper{
   max-width: 350px;
@@ -352,7 +369,7 @@ ul.program__list{
   padding: 15px 35px;    
 }
 .tarif__name{
-  font-size: 30px;
+  font-size: 28px;
   line-height: 30px;
   margin-bottom: 60px;
   text-align: center;
@@ -365,6 +382,9 @@ ul.tarif__list{
 .tarif__item{
   margin-bottom: 15px;
   font-size: 20px;
+}
+.tarif__item span{
+  color:rgb(157, 157, 157) ;
 }
 .tarif__price{
   list-style: none;
@@ -380,7 +400,7 @@ ul.tarif__list{
 }
 .tarif__price::after{
   position: absolute;
-  content: "2499 грн";
+  content: "689 грн";
   top: -35px;
   left: 90px;
   text-decoration: line-through;
@@ -388,6 +408,32 @@ ul.tarif__list{
   color: rgb(85, 85, 85);;
 
 }
+.tarif__price1 a{
+  color: #fff;
+}
+.tarif__price1{
+  list-style: none;
+  margin-top: 100px;
+  color:#fff;
+  padding: 15px 30px;
+  font-size: 24px;
+  height: 50px;
+  width: 100%;
+  background-color:#da0191; 
+  border-radius: 5px;
+  position: relative;
+}
+.tarif__price1::after{
+  position: absolute;
+  content: "489 грн";
+  top: -35px;
+  left: 90px;
+  text-decoration: line-through;
+  font-size: 24px;
+  color: rgb(85, 85, 85);;
+
+}
+
 .tarif__price a{
   color: #fff;
 }
@@ -658,7 +704,7 @@ hr{
     max-width: 1028px;
     height: 240px;
   }
-  .tarif__price{
+  .tarif__price,.tarif__price1{
     padding: 17px 17px;
   }
   
@@ -728,6 +774,12 @@ hr{
     margin-bottom: 20px;
   }
   .tarif__price{
+    text-align: center;
+    width: 60%;
+    margin: 80px auto 0;                           
+  }
+
+  .tarif__price1{
     text-align: center;
     width: 60%;
     margin: 80px auto 0;                           
@@ -831,10 +883,11 @@ hr{
       line-height: 45px;
     }
     .header__content{
+      padding-top: 190px;
       max-width: 510px;
     }
     .header__text{
-      font-size: 20px;
+      font-size: 18px;
     }
     .about__img{
       display: none;
@@ -881,7 +934,7 @@ hr{
     margin: 0 auto;
   }
   .reviews{
-    margin-top: 742px;
+    margin-top: 330px;
   }
   .reviews__item-img{
     height: 400px;
@@ -951,6 +1004,9 @@ hr{
   .timer__item{
     margin-right: 24px;
   }
+  .header__text{
+    margin-bottom: 35px;
+  }
   
   
 }
@@ -959,7 +1015,7 @@ hr{
     max-width: 410px;
     height: 500px;
   }
-  .tarif__price{
+  .tarif__price,.tarif__price1{
     padding: 0;
   }
   .about1__content{
@@ -969,6 +1025,10 @@ hr{
     padding-top: 15px;
   }
   .tarif__price{
+    padding-top: 11px;
+    width: 78%;
+  }
+  .tarif__price1{
     padding-top: 11px;
     width: 78%;
   }
@@ -1003,6 +1063,10 @@ hr{
   .social__list{
     text-align: center;
   }
+  .footer__contact{
+    margin-left: 100px;
+  }
+
 }
 @media (max-width:568px){
   .header__text-btn{
@@ -1042,6 +1106,10 @@ hr{
   .program__inner{
     margin-left: 40px;
   }
+  .footer__contact{
+    margin-left: 85px;
+  }
+
 }
 @media (max-width:455px){
   .timer__title{
@@ -1061,7 +1129,7 @@ hr{
   }
   .header__text-btn{
     
-    margin-bottom: 27px;
+    margin-bottom: 40px;
     margin-right: 0;
   }
   .timer__inner, .timer__inner1{
@@ -1080,10 +1148,23 @@ hr{
   .about1__inner{
     max-width: 333px;
   }
+  .footer__contact{
+    margin-left: 45px;
+  }
+
 }
 @media (max-width:360px){
   .video__link{
     max-width: 260px;
     
+  }
+  .footer__contact{
+    margin-left: 25px;
+  }
+  .header__title{
+    font-size: 40px;
+  }
+  .header__text{
+    font-size: 15px;
   }
 }
