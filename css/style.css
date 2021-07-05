@@ -1063,9 +1063,9 @@ hr{
   
   
   
-  .reviews{
+    .reviews {
     margin-top: 52px;
-  }
+}
   .reviews__item-img{
     height: 400px;
     min-width: 279px;
@@ -1096,6 +1096,7 @@ hr{
     display: block;
     margin: 0 auto;
   }
+
 }
 @media (max-width:824px){
   .timer__inner, .timer__inner1{
@@ -1374,6 +1375,7 @@ hr{
     height: 276px;
     max-width: 293px;
   }
+
 
 }
 @media (max-width:360px){
