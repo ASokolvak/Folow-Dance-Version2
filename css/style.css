@@ -1309,7 +1309,7 @@ hr{
   }
   
   .header__quote{
-    bottom: 10px;
+    bottom: 0;
     left: -6px;
     font-size: 11px;
     line-height: 12px;
